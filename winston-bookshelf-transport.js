@@ -8,6 +8,7 @@
 var util = require('util'),
     winston = require('winston');
 
+//export name here can't be just "bookshelf" because of conflict
 var BookshelfTransport = exports.BookshelfTransport = function(options) {
 
     this.options = options || {};

@@ -1,4 +1,4 @@
-var bookshelf = require("../modules/db").bookshelf;
+var bookshelf = require('./your-bookshelf-file');
 var tableName = "logs";
 
 var instanceMembers = function(){
