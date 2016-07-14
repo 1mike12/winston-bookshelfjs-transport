@@ -1,6 +1,6 @@
 {
   "name": "winston-bookshelf-transport",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A winston transport for use with bookshelfjs",
   "main": "winston-bookshelf-transport.js",
   "scripts": {
@@ -22,5 +22,5 @@
   "dependencies": {
     "winston": "^2.2.0"
   },
-  "readmeFilename": "README.md",
+  "readmeFilename": "README.md"
 }
