@@ -1,0 +1,26 @@
+{
+  "name": "winston-bookshelf-transport",
+  "version": "0.1.0",
+  "description": "A winston transport for use with bookshelfjs",
+  "main": "winston-bookshelf-transport.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1mike12/winston-bookshelfjs-transport"
+  },
+  "keywords": [
+    "winston",
+    "transport",
+    "bookshelfjs",
+    "bookshelf",
+    "logging"
+  ],
+  "author": "Mike Qin",
+  "license": "public domain",
+  "dependencies": {
+    "winston": "^2.2.0"
+  },
+  "readmeFilename": "README.md",
+}
