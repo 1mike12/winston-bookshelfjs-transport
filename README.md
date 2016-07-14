@@ -1,5 +1,4 @@
-A bookshelfjs transport for [winston][0].
-Built off of work done by sapher's [mysql-wisnton-transport][1]
+A bookshelfjs transport for [winston][0]. 
 
 ## Installation
 
@@ -10,7 +9,7 @@ Built off of work done by sapher's [mysql-wisnton-transport][1]
   $ npm install winston-bookshelfjs-transport
 ```
 
-## Usage
+## Preparation
 
 First you must generate your log table migration
 
@@ -54,7 +53,8 @@ var staticMembers = function(){
 module.exports = bookshelf.Model.extend(new instanceMembers, new staticMembers);
 ```
 
-Ready to use
+## Usage
+make sure that you are passing in your bookshelf `Log` model into the options. 
 
 ``` js
 var winston = require('winston');
@@ -70,5 +70,9 @@ var logger = new (winston.Logger)();
 logger.add(winston.transports.BookshelfTransport, options);
 logger.info("test");
 ```
+
+## Attribution
+Lifted some code from sapher's [mysql-wisnton-transport][1]
+
 [0]: https://github.com/flatiron/winston
 [1]: https://www.npmjs.com/package/winston-mysql-transport
