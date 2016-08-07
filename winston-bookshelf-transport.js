@@ -50,7 +50,7 @@ BookshelfTransport.prototype.log = function(level, msg, meta, callback) {
         })
         .catch(function(e){
             self.emit('error', e);
-            console.log(e)
+            console.error(e);
             return callback(e, null);
         });
 };
